@@ -20,13 +20,14 @@
 
     <!-- Add a favicon for the project -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <main class="main">
         <div class="calculator">
             <div class="screen">
                 <div class="screen-last" id="lastOperationScreen"></div>
-                <div class="screen-current" id="currentOperationScreen"></div>
+                <div class="screen-current" id="currentOperationScreen">0</div>
             </div>
             <div class="buttons-grid">
                 <!-- Top row -->
@@ -36,12 +37,12 @@
                 <button class="btn" onclick="this.blur();" data-number>7</button>
                 <button class="btn" onclick="this.blur();" data-number>8</button>
                 <button class="btn" onclick="this.blur();" data-number>9</button>
-                <button class="btn" onclick="this.blur();" data-operator>&#xf7;</button>
+                <button class="btn" onclick="this.blur();" data-operator>÷</button>
                 <!-- Third Row -->
                 <button class="btn" onclick="this.blur();" data-number>4</button>
                 <button class="btn" onclick="this.blur();" data-number>5</button>
                 <button class="btn" onclick="this.blur();" data-number>6</button>
-                <button class="btn" onclick="this.blur();" data-operator>x</button>
+                <button class="btn" onclick="this.blur();" data-operator>×</button>
                 <!-- Fourth Row -->
                 <button class="btn" onclick="this.blur();" data-number>1</button>
                 <button class="btn" onclick="this.blur();" data-number>2</button>
@@ -50,7 +51,7 @@
                 <!-- Fifth Row -->
                 <button class="btn" onclick="this.blur();" id="pointBtn">.</button>
                 <button class="btn" onclick="this.blur();" data-number>0</button>
-                <button class="btn" id="equalsBtn" onclick="this.blur();">=</button>
+                <button class="btn" onclick="this.blur();" id="equalsBtn">=</button>
                 <button class="btn" onclick="this.blur();" data-operator>+</button>
             </div>
         </div>
